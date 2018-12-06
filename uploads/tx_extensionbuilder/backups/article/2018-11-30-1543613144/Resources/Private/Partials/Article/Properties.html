@@ -1,0 +1,68 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<table class="tx-article" >
+	<tr>
+		<td>
+			<f:translate key="tx_article_domain_model_article.date" />
+		</td>
+		<td>
+		{article.date -> f:format.date()}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_article_domain_model_article.article_name" />
+		</td>
+		<td>
+		{article.articleName}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_article_domain_model_article.article_description" />
+		</td>
+		<td>
+		{article.articleDescription}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_article_domain_model_article.article_content" />
+		</td>
+		<td>
+		{article.articleContent}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_article_domain_model_article.article_optional_field_one" />
+		</td>
+		<td>
+		{article.articleOptionalFieldOne}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_article_domain_model_article.article_optional_field_two" />
+		</td>
+		<td>
+		{article.articleOptionalFieldTwo}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_article_domain_model_article.article_optional_field_three" />
+		</td>
+		<td>
+		{article.articleOptionalFieldThree}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_article_domain_model_article.article_image" />
+		</td>
+		<td>
+				<f:image src="{article.articleImage.originalResource.publicUrl}" width="200"/>
+		</td>
+	</tr>
+</table>
+</html>

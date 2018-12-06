@@ -1,0 +1,43 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+
+
+	<f:section name="content">
+		<div id="welcome">
+			      <div class="title">
+			        <h2>Nos akkor csapjunk a dolgok közepébe</h2>
+			        <span class="byline">Nyílván azért vagy itt, mert érdekel egy-két dolog, ami programozáshoz kapcsolódik.</span>
+			      </div>
+			      <p>Ha így van, és még az alapokon <strong>localhost installálása</strong>,még nem vagy túl,<a href="http://templated.co" rel="nofollow">katt ide</a>.Amennyiben már gyönyörűen fut a localhostodon a szerver, de esetleg szeretnéd, ha nem a default mappából kéne dolgoznod, akkor viszont <a href="http://fotogrph.com/">katt ide.</a>. Viszont valamiért erre az oldalra tévedtél, úgyhogy feltételezem, hogy az előző részeken már túl vagy, és szeretnéd, ha szép lenne a localhostos url-ed is.</p>
+			      <ul class="actions">
+			        <li><a href="#" class="button">Nos, akkor íme</a></li>
+			      </ul>
+			    </div>
+
+			    <div id="featured">
+			      <div class="title">
+			        <h2>Windows 10 - WAMP szerver - Localhost - Szép url - </h2>
+			        <span class="byline">Két file módosítás: httpd-vhosts.conf && hosts</span>
+			        <p>Maximum 5 perc.</p>
+			      </div>
+			    <f:debug>{articles}</f:debug>
+			        <ul class="style1">
+						<f:for each="{articles}" as="articles">
+						        <li class="first">
+						          <p class="date"><a href="#">
+						         
+						         <f:format.date format="d.m.Y">{articles.date}</f:format.date></a></p>
+						          <h3>{articles.articleName}</h3>
+
+						          <p> {articles.articleDescription -> f:format.html()}</p>
+						          <div class="showMore"><img src="https://image.flaticon.com/icons/svg/61/61028.svg"></div>
+						      	  <div class="articleContent displayNone">
+						          {articles.articleContent -> f:format.html()}
+						      </div>
+						        </li>
+						</f:for>
+ 					</ul>
+			    </div>
+
+	</f:section>
+</html>

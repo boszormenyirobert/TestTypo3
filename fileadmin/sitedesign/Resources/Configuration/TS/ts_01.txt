@@ -1,0 +1,57 @@
+page {
+    config.disableAllHeaderCode = 1
+    config.removeDefaultCss = 1
+} 
+
+page = PAGE
+page {
+    10 = FLUIDTEMPLATE
+    10 {
+       
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            10 {
+                entryLevel= 0
+                excludeUidList = 27,30,31
+                levels = 5
+                #includeSpacer = 1
+                titleField = nav_title // title
+                as = huhu
+            }
+        }
+    }
+}
+
+page = PAGE
+page.10 = FLUIDTEMPLATE
+page.10 {
+
+   templateName = Basis
+   templateRootPaths.1 =  fileadmin/sitedesign/Resources/Private/Templates
+   layoutRootPath =fileadmin/sitedesign/Resources/Private/Layout
+   partialRootPath =fileadmin/sitedesign/Resources/Private/Partials/
+   
+   
+
+  
+   variables {
+      contentNormal = CONTENT
+        contentNormal {
+            table = tt_content
+            select {
+                orderBy = sorting
+                where = colPos = 1
+                languageField = sys_language_uid
+            }
+        }
+   }
+}
+ 
+
+
+
+  page.includeCSS {
+    file1=fileadmin/sitedesign/Resources/CSS/default.css
+    file2=fileadmin/sitedesign/Resources/CSS/fonts.css
+   
+}

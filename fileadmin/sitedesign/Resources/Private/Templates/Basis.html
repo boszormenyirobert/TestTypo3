@@ -1,0 +1,36 @@
+<f:layout name="../Layout/BasisContent" />
+	
+	
+	<f:section name="Header">	  
+			       {f:render(partial: 'Header/headerContent')}
+			       <body>
+<div id="page" class="container">
+    <div id="header">
+        <div id="logo">
+            <img src="http://localhost/portfolioTypo3/uploads/icons/coffee-cup.png" alt="" />
+            <h1><a href="#">ehhez azért</a></h1>
+            <span>kell egy <a href="http://templated.co" rel="nofollow">kávé</a></span>
+        </div>
+        <div id="menu">
+            <ul>
+            
+                <f:for each="{huhu}" as="menuItem">
+                   <li class="current_page_item"><a href="{menuItem.link}" accesskey="1" title="">{menuItem.title}</a></li>
+                </f:for>
+<!--
+                <li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
+-->              
+            </ul>
+        </div>
+    </div>
+	</f:section>
+
+	<f:section name="Content">
+		<div id="main">
+    		<f:format.html>{contentNormal}</f:format.html>
+    	</div>
+	</f:section>
+     
+	<f:section name="Footer">
+	    {f:render(partial: 'Footer/footerContent')}
+	</f:section>

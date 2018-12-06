@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-11-30T21:18:05Z" product-name="article">
+		<header/>
+		<body>
+			<trans-unit id="tx_article_domain_model_article">
+				<source>Article</source>
+			</trans-unit>
+			<trans-unit id="tx_article_domain_model_article.date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_article_domain_model_article.article_name">
+				<source>Article Name</source>
+			</trans-unit>
+			<trans-unit id="tx_article_domain_model_article.article_description">
+				<source>Article Description</source>
+			</trans-unit>
+			<trans-unit id="tx_article_domain_model_article.article_content">
+				<source>Article Content</source>
+			</trans-unit>
+			<trans-unit id="tx_article_domain_model_article.article_optional_field_one">
+				<source>Article Optional Field One</source>
+			</trans-unit>
+			<trans-unit id="tx_article_domain_model_article.article_optional_field_two">
+				<source>Article Optional Field Two</source>
+			</trans-unit>
+			<trans-unit id="tx_article_domain_model_article.article_optional_field_three">
+				<source>Article Optional Field Three</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

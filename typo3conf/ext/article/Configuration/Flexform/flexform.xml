@@ -1,0 +1,27 @@
+<T3DataStructure>
+        <meta>
+          <langDisable>1</langDisable>
+        </meta>
+        <sheets>
+          <sDEF>
+            <ROOT>
+              <type>array</type>
+                <el>
+                  <settings.datensatz>
+                    <TCEforms>
+                      <config>
+                        <type>group</type>
+                          <internal_type>db</internal_type> 
+                            <allowed>tx_article_domain_model_article</allowed>
+                            <size>10</size>
+                            <minitems>1</minitems>
+                            <maxitems>100</maxitems>
+                      </config>
+                      <label>Articles</label>
+                    </TCEforms>
+                  </settings.datensatz>
+                </el>
+            </ROOT>
+          </sDEF>
+        </sheets>
+</T3DataStructure>

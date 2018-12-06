@@ -1,0 +1,23 @@
+{
+    "name": "article/article",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Article\\Article\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Article\\Article\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "article": "self.version",
+        "typo3-ter/article": "self.version"
+    }
+}
