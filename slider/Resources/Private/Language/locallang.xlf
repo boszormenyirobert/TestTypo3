@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-11-23T14:08:31Z" product-name="slider">
+		<header/>
+		<body>
+			<trans-unit id="tx_slider_domain_model_slider">
+				<source>Slider</source>
+			</trans-unit>
+			<trans-unit id="tx_slider_domain_model_slider.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_slider_domain_model_slider.text">
+				<source>Text</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

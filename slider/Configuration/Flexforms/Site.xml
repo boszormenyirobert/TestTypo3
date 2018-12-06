@@ -1,0 +1,28 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDef>
+
+            <ROOT>
+                <type>array</type>
+                <el>
+                    <settings.imgcollection>
+                        <TCEforms>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>tx_slider_domain_model_slider</allowed>
+                                <size>10</size>
+                                <minitems>1</minitems>
+                                <maxitems>30</maxitems>
+                            </config>
+                            <label>Slider elements</label>
+                        </TCEforms>
+                    </settings.imgcollection>
+                </el>
+            </ROOT>
+        </sDef>
+    </sheets>
+</T3DataStructure>
